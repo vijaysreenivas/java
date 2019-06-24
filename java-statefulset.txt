@@ -17,7 +17,7 @@ spec:
         app: java
     spec:
       containers:
-        - image: '172.30.56.229:5000/java/java:latest'
+        - image: 'docker-registry.default.svc:5000/java/java:latest'
           imagePullPolicy: Always
           name: java
 	  command: ["/bin/sh", "-ec", "while :; do echo '.'; sleep 5 ; done"]
