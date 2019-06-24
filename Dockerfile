@@ -2,12 +2,12 @@
 FROM ubuntu:18.04
 
 # Define commonly used JAVA_HOME variable
-ENV JAVA_HOME /usr/lib/jvm/java-7-openjdk-amd64
+ENV JAVA_HOME /usr/lib/jvm/java-8-openjdk-amd64
 
 # Install Java.
 RUN \
   apt-get update && \
-  apt-get install -y openjdk-7-jre && \
+  apt-get install -y openjdk-8-jre-headless && \
   rm -rf /var/lib/apt/lists/*
 
 # Define working directory.
