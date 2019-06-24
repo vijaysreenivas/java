@@ -27,7 +27,7 @@ parameters:
   value: java
   required: true
 - name: IMAGE_STREAM_VERSION
-  displayName: Image Strean Version
+  displayName: Image Stream Version
   description: The version of the output image stream.
   value: latest
   required: true
