@@ -58,3 +58,17 @@ objects:
       to:
         kind: ImageStreamTag
         name: ${IMAGE_STREAM_NAME}:${IMAGE_STREAM_VERSION}
+- apiVersion: v1
+  kind: BuildConfig
+  metadata:
+    name: java-pipeline
+  spec:
+    runPolicy: Serial
+    source:
+      git:
+        uri: ${GIT_REPOSITORY}
+        ref: ${GIT_REF}
+    strategy:
+      jenkinsPipelineStrategy:
+        jenkinsfilePath: Jenkinsfile
+      type: JenkinsPipeline
