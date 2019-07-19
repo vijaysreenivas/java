@@ -2,9 +2,6 @@
 
 pipeline {
     agent any
-    environment {
-        PROXY_SECRET = credentials('kafka-sbb-proxy-secret')
-    }
     stages {
         stage('Checkout') {
             steps {
