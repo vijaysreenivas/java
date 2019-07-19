@@ -5,7 +5,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git credentialsId: 'my-git-secret', branch: 'master', url: 'https://github.com:manepallipavankumar/java.git'
+                git credentialsId: 'my-git-secret', branch: 'master', url: 'https://github.com:vijaysreenivas/java.git'
             }
         }
         stage('Build') {
