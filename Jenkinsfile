@@ -5,7 +5,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'master', url: 'ssh://git@github.com:manepallipavankumar/java.git'
+                git branch: 'master', url: 'https://github.com:manepallipavankumar/java.git'
             }
         }
         stage('Build') {
