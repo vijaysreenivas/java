@@ -45,7 +45,7 @@ objects:
 - apiVersion: v1
   kind: BuildConfig
   metadata:
-    name: confluent-base-builder
+    name: java-base-builder
   spec:
     runPolicy: Serial
     source:
